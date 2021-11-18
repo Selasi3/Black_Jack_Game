@@ -1,7 +1,4 @@
 public enum CardSuits {
-    Heart,
-    Diamond,
-    Clubs,
-    Spades
+    Heart,Diamond, Clubs, Spades
 
 }
