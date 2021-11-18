@@ -5,11 +5,11 @@ import java.util.Map;
 
 public class Cards {
     private CardSuits cardSuits;
-    private CardValue cardValue;
+    private int cardValue;
 
 
 
-    public Cards(CardSuits cardSuits, CardValue cardValue) {
+    public Cards(CardSuits cardSuits, int cardValue) {
         this.cardSuits = cardSuits;
         this.cardValue = cardValue;
     }
@@ -18,7 +18,7 @@ public class Cards {
         return this.cardSuits;
     }
 
-    public CardValue getCardValue() {
+    public Integer getCardValue() {
         return this.cardValue;
     }
 

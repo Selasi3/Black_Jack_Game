@@ -13,13 +13,14 @@ public class Deck {
         return cards;
     }
 
-    public  void fullDeck(){
+    public List<Cards> fullDeck(){
         for (CardSuits cardSuits : CardSuits.values()){
             for (CardValue cardValue :  CardValue.values()){
-                this.cards.add( new Cards(cardSuits,cardValue));
+                this.cards.add(new Cards(cardSuits,cardValue.getValue()));
             }
-        }
+        } return cards;
     }
+
 
 
     @Override
