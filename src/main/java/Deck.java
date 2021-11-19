@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Deck {
 
-    private ArrayList<Cards> cards;
+    private ArrayList<Cards> cards=new ArrayList<>();
     List<Cards> userOneCard;
 
     public Deck() {
@@ -19,19 +19,26 @@ public class Deck {
             for (CardValue cardValue :  CardValue.values()){
                 this.cards.add(new Cards(cardSuits,cardValue.getValue()));
             }
-            shuffleCard();
+//            shuffleCard();
         } return cards;
     }
 
+    public ArrayList<Cards> shuffleCard(){
+        Collections.shuffle(cards);
+        return cards;
+    }
+//    public void shuffleCard(){
+//       Collections.shuffle(cards);
+//    }
 
-    public void shuffleCard(){
-       Collections.shuffle(cards);
+
+    public void getTwoCard(){
+
+
     }
 
-
     public void getOneCard(){
-         cards.remove(0);
-
+        cards.remove(0);
     }
 
 
