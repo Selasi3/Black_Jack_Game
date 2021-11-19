@@ -8,7 +8,6 @@ public class Cards {
     private int cardValue;
 
 
-
     public Cards(CardSuits cardSuits, int cardValue) {
         this.cardSuits = cardSuits;
         this.cardValue = cardValue;
